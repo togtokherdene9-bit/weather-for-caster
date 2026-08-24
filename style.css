@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e57c2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 28px;
+    font-weight: 600;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#input {
+    flex: 1;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+#search-btn {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 50px;
+    background: #ff6b6b;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background: #ff5252;
+}
+
+.weather-card {
+    display: none;
+}
+
+.weather-card.show {
+    display: block;
+}
+
+#city-name {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.weather-icon {
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+}
+
+.temp {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+}
+
+.high-low {
+    font-size: 1.1rem;
+    margin: 5px 0 15px 0;
+    opacity: 0.9;
+}
+
+.desc {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 18px 10px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.detail-item .label {
+    font-size: 0.85rem;
+    opacity: 0.75;
+}
+
+.detail-item span:last-child {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.error {
+    color: #ffcccc;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
